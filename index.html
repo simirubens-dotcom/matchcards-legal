@@ -33,7 +33,7 @@
 <div class="wrap">
 
 <h1>Política de Privacidade — MatchCards</h1>
-<p class="meta"><strong>Última atualização:</strong> 30 de julho de 2026</p>
+<p class="meta"><strong>Última atualização:</strong> 12 de outubro de 2026</p>
 
 <p>Esta Política de Privacidade descreve como o <strong>MatchCards</strong> ("nós", "app") coleta,
 usa, compartilha e protege os seus dados pessoais, em conformidade com a Lei Geral de Proteção
@@ -90,23 +90,26 @@ de Dados (Lei nº 13.709/2018 — "LGPD").</p>
   reservadas, denúncias e bloqueios;</li>
   <li>Mensagens apagadas por você deixam de aparecer nas conversas, mas podem ser retidas
   internamente por tempo limitado para fins de segurança, moderação e auditoria.</li>
+  <li><strong>Visitas a perfis:</strong> quando você abre o perfil completo de alguém na Arena,
+  essa pessoa pode ver que você abriu a carta dela, na seção "Quem viu você" (últimos 7 dias).
+  Perfis ocultos e pessoas bloqueadas não aparecem nessa lista.</li>
 </ul>
 
 <h3>1.6 Dados de uso</h3>
 <ul>
   <li>Histórico de quizzes respondidos, sequência diária (streak), limites e bônus de uso.</li>
+  <li>Pontos de quiz da semana, exibidos no <strong>ranking semanal</strong> (nome, foto, cidade e
+  pontos) para outros usuários da sua cidade e do Brasil. Perfis ocultos não aparecem no ranking.</li>
 </ul>
 
-<h3>1.7 Identificadores de publicidade e dados técnicos</h3>
+<h3>1.7 Notificações e dados técnicos</h3>
 <ul>
-  <li>Ao exibir anúncios recompensados, o Google AdMob acessa o <strong>identificador de
-  publicidade do seu aparelho (Advertising ID)</strong> e dados técnicos básicos (modelo do
-  aparelho, versão do sistema, idioma, endereço IP aproximado). Como usamos apenas anúncios
-  <strong>não personalizados</strong>, esses dados são utilizados para exibir e medir o anúncio,
-  controlar a frequência e prevenir fraude — <strong>não</strong> para montar um perfil de
-  publicidade sobre você.</li>
-  <li>Você pode redefinir ou excluir o identificador de publicidade nas configurações do Android
-  (Configurações → Google → Anúncios).</li>
+  <li>Se você permitir notificações, guardamos o <strong>token de notificação do aparelho</strong>
+  (identificador gerado pelo sistema de push) para avisar sobre mensagens, duelos, visitas à sua
+  carta e a sua sequência diária. Ao sair da conta, o token é desvinculado dela. Você pode desligar
+  as notificações a qualquer momento nas configurações do Android.</li>
+  <li>O app <strong>não exibe anúncios</strong> e <strong>não acessa o identificador de
+  publicidade</strong> do aparelho.</li>
 </ul>
 
 <h2>2. Para que usamos os dados</h2>
@@ -120,7 +123,8 @@ de Dados (Lei nº 13.709/2018 — "LGPD").</p>
     <tr><td>Verificação facial opcional</td><td>Consentimento para dado sensível (art. 11, I)</td></tr>
     <tr><td>Moderação de fotos, denúncias, bloqueio de contas</td><td>Legítimo interesse e segurança (art. 7º, IX)</td></tr>
     <tr><td>Impedir novo cadastro de contas banidas</td><td>Legítimo interesse (prevenção a fraude e abuso)</td></tr>
-    <tr><td>Exibição de anúncios não personalizados</td><td>Execução de contrato (custeio do serviço gratuito)</td></tr>
+    <tr><td>"Quem viu você" e ranking semanal</td><td>Execução de contrato</td></tr>
+    <tr><td>Envio de notificações (push)</td><td>Consentimento (permissão de notificações do aparelho)</td></tr>
     <tr><td>Cumprimento de obrigações legais</td><td>Obrigação legal (art. 7º, II)</td></tr>
   </tbody>
 </table>
@@ -148,7 +152,7 @@ para cada finalidade:</p>
     <tr><td><strong>Supabase</strong></td><td>Hospedagem do banco de dados, autenticação e armazenamento de arquivos</td><td>Infraestrutura em nuvem; pode envolver transferência internacional de dados</td></tr>
     <tr><td><strong>Sightengine</strong></td><td>Moderação automática de nudez em fotos/vídeos públicos</td><td>Recebe a mídia apenas para análise</td></tr>
     <tr><td><strong>Face++ (Megvii)</strong></td><td>Comparação facial na verificação opcional de perfil</td><td>Recebe a selfie e a foto principal apenas durante a verificação; a selfie não é retida por nós</td></tr>
-    <tr><td><strong>Google AdMob</strong></td><td>Exibição de anúncios recompensados <strong>não personalizados</strong></td><td>Configurado para não usar dados para personalização; acessa o identificador de publicidade do aparelho (item 1.7)</td></tr>
+    <tr><td><strong>Expo (Expo Push Service) e Google Firebase Cloud Messaging</strong></td><td>Entrega das notificações push</td><td>Recebem o token do aparelho e o texto da notificação (item 1.7)</td></tr>
   </tbody>
 </table>
 </div>
